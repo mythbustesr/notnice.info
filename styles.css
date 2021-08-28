@@ -65,12 +65,13 @@ img {
     filter: contrast(2) grayscale(100);
     -webkit-filter: contrast(2) grayscale(100);
     -moz-filter: contrast(2) grayscale(100);
-    animation: flicker 0.25s alternate-reverse infinite cubic-bezier(.59,.23,.39,1)
-
+    animation: flicker 0.25s alternate-reverse infinite cubic-bezier(.59,.23,.39,1);
+    -webkit-animation: flicker 0.25s alternate-reverse infinite cubic-bezier(.59,.23,.39,1);
 }
 
 #logo {
-    animation: flicker2 0.3s alternate-reverse infinite cubic-bezier(.59,.23,.39,1)
+    animation: flicker2 0.3s alternate-reverse infinite cubic-bezier(.59,.23,.39,1);
+    -webkit-animation: flicker2 0.3s alternate-reverse infinite cubic-bezier(.59,.23,.39,1);
 }
 
 .n {
@@ -83,22 +84,22 @@ img {
 .i {
     -webkit-animation: rotate 300s linear infinite, flicker2 0.3s infinite;
     animation: rotate 300s linear infinite, flicker2 0.3s infinite;
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
 
 }
 .c {
     -webkit-animation: rotate 300s reverse linear infinite, flicker2 0.4s infinite;
     animation: rotate 300s reverse linear infinite, flicker2 0.4s infinite;
-    -webkit-animation-delay: 8s;
-            animation-delay: 8s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
 
 }
 .e {
     -webkit-animation: rotate 300s linear infinite, flicker2 0.24s infinite;
     animation: rotate 300s linear infinite, flicker2 0.24s infinite;
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
 }
 
 #logo span {
