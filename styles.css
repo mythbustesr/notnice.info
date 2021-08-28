@@ -45,14 +45,25 @@ a:hover {
 @keyframes rotating {
     from{
         color:red;
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
 
     }
     to{
         color: green;
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+
+    }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        color:red;
+        -webkit-transform: rotate(0deg);
+
+    }
+    to{
+        color: green;
+        -webkit-transform: rotate(360deg);
 
     }
 }
