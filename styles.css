@@ -4,32 +4,96 @@
 
 }
 
+@-webkit-keyframes flicker {
+    0% { 
+        -webkit-filter: contrast(1);
+    }
+    25% {
+        -webkit-filter: contrast(1.07);
+    }
+    50% {
+        -webkit-filter: contrast(1.04);
+    }
+    75% {
+        -webkit-filter: contrast(1.12);
+    }
+    100% { -webkit-filter: contrast(1.2);
+
+      }
+  }
+  @-webkit-keyframes flicker2 {
+    0% { 
+        -webkit-filter: opacity(0.8);
+    }
+    25% {
+        -webkit-filter: opacity(1);
+    }
+    50% {
+        -webkit-filter: opacity(0.9);
+    }
+    75% {
+        -webkit-filter: opacity(0.85);
+    }
+    100% { -webkit-filter: opacity(0.7);
+
+      }
+  }
+
 body {
     background-color: rgb(255, 255, 255);
-
+    /* animation: flicker 0.02s infinite cubic-bezier(0,.73,.98,.29) */
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.19rem;
     margin: 5rem;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+    letter-spacing: -0.01vw;
+    color: black;
+    font: weight bold;
 }
 
 img {
-    filter: contrast(1.5) blur(30px) grayscale(100);
-    -webkit-filter: contrast(1.5) blur(30px) grayscale(100);
-    -moz-filter: contrast(1.5) blur(30px) grayscale(100);
+    filter: contrast(2) grayscale(100);
+    -webkit-filter: contrast(2) grayscale(100);
+    -moz-filter: contrast(2) grayscale(100);
+    animation: flicker 0.25s alternate-reverse infinite cubic-bezier(.59,.23,.39,1)
 
 }
 
 #logo {
+    animation: flicker2 0.3s alternate-reverse infinite cubic-bezier(.59,.23,.39,1)
+}
 
+.n {
+    -webkit-animation: rotate 300s reverse linear infinite, flicker2 0.2s infinite;
+    animation: rotate 300s reverse linear infinite, flicker2 0.2s infinite;
+    animation-delay: 4s;
+
+}
+.i {
+    -webkit-animation: rotate 300s linear infinite, flicker2 0.3s infinite;
+    animation: rotate 300s linear infinite, flicker2 0.3s infinite;
+    animation-delay: 6s;
+
+}
+.c {
+    -webkit-animation: rotate 300s reverse linear infinite, flicker2 0.4s infinite;
+    animation: rotate 300s reverse linear infinite, flicker2 0.4s infinite;
+    animation-delay: 8s;
+
+}
+.e {
+    -webkit-animation: rotate 300s linear infinite, flicker2 0.24s infinite;
+    animation: rotate 300s linear infinite, flicker2 0.24s infinite;
+    animation-delay: 10s;
 }
 
 #logo span {
     display: inline-block;
-    animation: rotate 200s linear infinite;
+    /* animation: rotate 3s linear infinite; */
+    /* -webkit-animation: rotate 3s linear infinite; */
 }
 
 a {
@@ -39,8 +103,6 @@ color: orangered;
 a:hover {
     color: bisque;
 }
-
-
 
 @keyframes rotating {
     from{
@@ -81,7 +143,7 @@ a:hover {
 
 }
 
-iframe {
+/* iframe {
     
 }
 
@@ -104,6 +166,7 @@ iframe {
     left:0;
     width:100%;
     height:100%;
- 
 
-  }
+  } */
+  
+
