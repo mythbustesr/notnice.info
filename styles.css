@@ -16,13 +16,18 @@ p {
 
 }
 
+img {
+    filter: contrast(1.5) blur(50px) grayscale(100) ;
+
+}
+
 #logo {
 
 }
 
 #logo span {
     display: inline-block;
-    animation: rotate 100s linear infinite;
+    animation: rotate 200s linear infinite;
 }
 
 a {
